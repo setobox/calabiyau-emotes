@@ -27,7 +27,7 @@ console.log(images)
 </script>
 
 <template>
-  <div w-screen>
+  <div pt-12 w-full>
     <header>
       <h1 flex gap-1 items-center justify-center rel="noreferrer" href="https://github.com/antfu-collective/vitesse-lite" target="_blank">
         <img rounded h-8 w-8 src="/icon.webp" alt="icon">
