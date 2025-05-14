@@ -5,6 +5,7 @@ import {
   presetWebFonts,
   presetWind4,
 } from 'unocss'
+import { presetShadcn } from 'unocss-preset-shadcn'
 
 export default defineConfig({
   shortcuts: [
@@ -14,6 +15,10 @@ export default defineConfig({
   presets: [
     presetWind4(),
     presetAttributify(),
+    presetShadcn({
+      color: 'slate',
+      darkSelector: '.dark',
+    }),
     presetIcons({
       scale: 1.2,
       warn: true,
@@ -26,4 +31,14 @@ export default defineConfig({
       },
     }),
   ],
+  content: {
+    pipeline: {
+      include: [
+        // the default
+        /\.(vue|svelte|[jt]sx|mdx?|astro|elm|php|phtml|html)($|\?)/,
+        // include js/ts files
+        '(components|src)/**/*.{js,ts}',
+      ],
+    },
+  },
 })

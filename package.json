@@ -17,6 +17,12 @@
   "dependencies": {
     "@vueuse/components": "catalog:frontend",
     "@vueuse/core": "catalog:frontend",
+    "class-variance-authority": "catalog:build",
+    "clsx": "catalog:build",
+    "lucide-vue-next": "catalog:build",
+    "radix-vue": "catalog:build",
+    "reka-ui": "catalog:frontend",
+    "tailwind-merge": "catalog:build",
     "tinyexec": "catalog:build",
     "vue": "catalog:frontend",
     "vue-router": "catalog:frontend"
@@ -39,6 +45,7 @@
     "taze": "catalog:dev",
     "typescript": "catalog:dev",
     "unocss": "catalog:build",
+    "unocss-preset-shadcn": "catalog:build",
     "unplugin-auto-import": "catalog:build",
     "unplugin-vue-components": "catalog:build",
     "unplugin-vue-macros": "catalog:build",
